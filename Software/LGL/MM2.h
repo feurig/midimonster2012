@@ -84,14 +84,6 @@
 		/** Sample table increments per period for the base MIDI note frequency */
 		#define BASE_INCREMENT             (((F_CPU / VIRTUAL_SAMPLE_TABLE_SIZE / 2) / BASE_FREQUENCY))
 
-	/* Type Defines: */
-		typedef struct
-		{
-			uint8_t  LRUAge;
-			uint8_t  Pitch;
-			uint32_t TableIncrement;
-			uint32_t TablePosition;
-		} DDSNoteData;
 
 	/* Function Prototypes: */
 		void SetupHardware(void);

@@ -118,7 +118,6 @@ int main(void)
 /** ISR to handle the reloading of the PWM timer with the next sample. */
 ISR(TIMER0_COMPA_vect, ISR_BLOCK)
 {
-	uint16_t MixedSample = 0;
 
 	/* Sum together all the active notes to form a single sample */
 	for (uint8_t i = 0; i < MAX_SIMULTANEOUS_NOTES; i++)
